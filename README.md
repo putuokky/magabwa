@@ -7,6 +7,7 @@
 
 -   Laravel 12
 -   Filament 3.3
+-   Tailwindcss 4
 
 ## Installation Guide
 
@@ -52,7 +53,13 @@
     php artisan migrate:refresh --seed
     ``` -->
 
-7. Start the development server:
+7. Create a new user account:
+
+    ```bash
+    php artisan make:filament-user
+    ```
+
+8. Start the development server:
     ```bash
     php artisan serve
     ```
